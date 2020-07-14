@@ -27,3 +27,18 @@ changelog:
     exclude:
     - '^docs:'
     - '^test:'
+brews:
+  - name: "oauth2t"
+    url_template: "https://github.com/Contrast-Security-Inc/oauth2t/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    commit_author:
+      name: goreleaserbot
+      email: goreleaser@contrastsecurity.com
+    tap:
+      owner: "Contrast-Security-Inc"
+      name: "homebrew-brew"
+    folder: "Formula"
+    skip_upload: false
+    homepage: "https://github.com/Contrast-Security-Inc/oauth2t"
+    description: "Access Token helper for OAuth2 comms."
+
+
